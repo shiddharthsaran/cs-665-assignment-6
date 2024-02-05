@@ -1,6 +1,4 @@
-package edu.bu.met.cs665.beverages.coffee;
-
-import edu.bu.met.cs665.beverages.Beverages;
+package edu.bu.met.cs665;
 
 public class Coffee extends Beverages {
     public float basePrice = 2;

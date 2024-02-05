@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.beverages.coffee;
+package edu.bu.met.cs665;
 
 public class Espresso extends Coffee {
     public float addPrice = 0;

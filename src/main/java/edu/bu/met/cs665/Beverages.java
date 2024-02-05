@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.beverages;
+package edu.bu.met.cs665;
 
 public class Beverages {
     public int milk;
