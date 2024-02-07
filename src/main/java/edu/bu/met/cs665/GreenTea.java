@@ -6,7 +6,7 @@ public class GreenTea extends Tea {
         super(milk, sugar);
     }
 
-    public void setAddPrice(int addPrice){
+    public void setAddPrice(float addPrice){
         this.addPrice = addPrice;
     }
 

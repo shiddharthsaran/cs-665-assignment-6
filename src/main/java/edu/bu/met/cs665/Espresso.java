@@ -5,7 +5,7 @@ public class Espresso extends Coffee {
     public Espresso(int milk, int sugar) {
         super(milk, sugar);
     }
-    public void setAddPrice(int addPrice){
+    public void setAddPrice(float addPrice){
         this.addPrice = addPrice;
     }
 
