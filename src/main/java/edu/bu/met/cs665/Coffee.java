@@ -6,8 +6,8 @@ public class Coffee extends Beverages {
     public Coffee(int milk, int sugar) {
         super(milk, sugar);
     }
-    public void setBasePrice(int addPrice){
-        this.basePrice = addPrice;
+    public void setBasePrice(float basePrice){
+        this.basePrice = basePrice;
     }
 
     public float getBasePrice(){
