@@ -9,6 +9,8 @@
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
 
+- The program should be able to customize each beverage with milk and sugar selected by the user, it should provide multiple options of beverages and also calculate the total price based on the units of condiments selected by the user. 
+
 # GitHub Repository Link:
 https://github.com/shiddharthsaran/cs-665-assignment-1
 # Implementation Description 
