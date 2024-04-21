@@ -20,11 +20,15 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+  - Implemented beverage abstract class so that new types of beverages can be easily added and removed without affecting other classes.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+  - For simplicity and understanding I have added comments and doc blocks for all classes and used descriptive names to aid in understanding.
 - Describe how you have avoided duplicated code and why it is important.
+  - Duplicate code is minimized by using abstract classes to define beverage and beverage add-ons which ensures consistency and reduce chances of errors while making changes to the codebase. 
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+  - I have chosen and implemented Decorator Pattern as the requirement to have base beverage and add condiments to it. 
 
 
 # Maven Commands
