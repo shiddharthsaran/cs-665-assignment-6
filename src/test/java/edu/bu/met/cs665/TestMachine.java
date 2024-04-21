@@ -22,8 +22,16 @@ public class TestMachine {
      */
     @Test
     public void testEsp(){
-        Espresso esp = new Espresso(2, 2);
-        assertEquals(6.0, esp.getTotPrice(), 0.0001);
+        Beverage esp = new Espresso();
+
+        esp = new AddOnCountCheck().countCheck(esp, "milk");
+        esp = new AddOnCountCheck().countCheck(esp, "milk");
+
+        esp = new AddOnCountCheck().countCheck(esp, "sugar");
+        esp = new AddOnCountCheck().countCheck(esp, "sugar");
+
+
+        assertEquals(6.0, esp.getPrice(), 0.0001);
 
 
     }
@@ -32,27 +40,38 @@ public class TestMachine {
      */
     @Test
     public void testYt(){
-        YellowTea yt = new YellowTea(1, 2);
-        assertEquals(6.5, yt.getTotPrice(), 0.0001);
+        Beverage yt = new YellowTea();
+
+        yt = new AddOnCountCheck().countCheck(yt, "milk");
+
+        yt = new AddOnCountCheck().countCheck(yt, "sugar");
+        yt = new AddOnCountCheck().countCheck(yt, "sugar");
+        assertEquals(6.5, yt.getPrice(), 0.0001);
     }
     /**
      * Unit test for Black Tea beverage.
      */
     @Test
     public void testBt(){
-        BlackTea bt = new BlackTea(3, 3);
-        bt.setMilk(0);
-        assertEquals(4.5, bt.getTotPrice(), 0.0001);
+        Beverage bt = new BlackTea();
+
+        bt = new AddOnCountCheck().countCheck(bt, "sugar");
+        bt = new AddOnCountCheck().countCheck(bt, "sugar");
+        bt = new AddOnCountCheck().countCheck(bt, "sugar");
+
+
+        assertEquals(4.5, bt.getPrice(), 0.0001);
     }
     /**
      * Unit test for Latte Macchiato beverage.
      */
     @Test
     public void testLm(){
-        LatteMacchiato lm = new LatteMacchiato(0, 0);
-        lm.setSugar(100);
-        assertEquals(5.0, lm.getTotPrice(), 0.0001);
-        lm.setSugar(1);
-        assertEquals(5.5, lm.getTotPrice(), 0.0001);
+        Beverage lm = new LatteMacchiato();
+        for(int i = 0; i < 100; i++){
+            lm = new AddOnCountCheck().countCheck(lm, "sugar");
+
+        }
+        assertEquals(6.5, lm.getPrice(), 0.0001);
     }
 }

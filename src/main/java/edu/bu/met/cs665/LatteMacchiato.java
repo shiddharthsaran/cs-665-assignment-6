@@ -1,8 +1,8 @@
 package edu.bu.met.cs665;
 
-public class Espresso extends Beverage {
-    float price = 4;
-    static String bevDetails = "Espresso Beverage";
+public class LatteMacchiato extends Beverage {
+    float price = 5;
+    static String bevDetails = "Latte Macchiato Beverage";
     int milkUnitCount = 0;
     int sugarUnitCount = 0;
     @Override
