@@ -2,9 +2,9 @@
 | CS-665       | Software Design & Patterns    |
 |--------------|-------------------------------|
 | Name         | Shiddharth Saran Marudachalam |
-| Date         | 02/04/2024                    |
+| Date         | 04/20/2024                    |
 | Course       | Spring                        |
-| Assignment # | 1                             |
+| Assignment # | 6                             |
 
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
@@ -12,7 +12,7 @@ Please add a paragraph or two overviewing the objectives of the assignment.
 - The program should be able to customize each beverage with milk and sugar selected by the user, it should provide multiple options of beverages and also calculate the total price based on the units of condiments selected by the user. 
 
 # GitHub Repository Link:
-https://github.com/shiddharthsaran/cs-665-assignment-1
+https://github.com/shiddharthsaran/cs-665-assignment-6
 # Implementation Description 
 
 
@@ -20,15 +20,11 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
-  - Implemented two stages of inheritance with the beverages into two main types - Coffee and Tea and then into sub-type of those two types. So in future it is possible to add type and also sub-type of a beverage. For removing a subtype can be removed and extended to any other main type of beverage. Also, for pricing included a base price for the type and additional price for the sub-type classes to have flexibility to change prices for each specific beverage. 
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
-  - Implementation wise it is simpler as it just uses inheritance concept for segregating the beverage.
 - Describe how you have avoided duplicated code and why it is important.
-  - Avoided duplicate code for allocating the milk and sugar units, just had the code in the Beverage class which is inherited by all beverages so each beverage class does not have to implement to get milk and sugar units.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
-  - For this implementation I have not used a design pattern.
 
 
 # Maven Commands
